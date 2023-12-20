@@ -29,3 +29,7 @@ def about(request):
 def contact(request):
     return render(request, "contact.html")
     # return HttpResponse("This page is for contacting me.")
+
+def signup(request):
+    return render(request, "signup.html")
+    # return HttpResponse("This page is for contacting me.")

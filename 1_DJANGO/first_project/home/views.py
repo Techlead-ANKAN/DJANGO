@@ -15,7 +15,6 @@ def home(request):
     # return HttpResponse("Home Page")
 
 
-
 def about(request):
     return render(request, "about.html")
     return HttpResponse("About Page")

@@ -32,4 +32,5 @@ urlpatterns = [
     path('contact', views.contact, name = "Contact Me"),
     path('repositories', views.repositories, name = "Repositories"),
     path('zip_files', views.zip_files, name = "Zip Files"),
+    path('signup', views.signup, name = "Sign up")
 ]
