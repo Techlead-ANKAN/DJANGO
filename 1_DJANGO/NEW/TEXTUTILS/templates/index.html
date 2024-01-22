@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextUtils</title>
+</head>
+<body>
+    <h1>Welcome to the Text Analyzer</h1><br>
+    <div class="form-floating">
+        <form action = 'analyze' method = 'get'>
+        <textarea name = "text" class="form-control" placeholder="Enter your text here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea"></label><br>
+        <input type="checkbox" name = "rmpunc"> Remove Punctuation </input>
+        <br>
+        <input type="checkbox" name = "capfirst"> Perfect Capitalization </input>
+        <br>
+        <input type="checkbox" name = "rmline"> New Line Removal </input>
+        <br>
+        <input type="checkbox" name = "rmspace"> Space Removal </input>
+        <br>
+        <input type="checkbox" name = "char_count"> Character Counter </input>
+        <br>
+        <button type="submit" class="btn btn-primary"> Analyze Text </button>
+        </form>
+    </div>
+
+</body>
+</html>

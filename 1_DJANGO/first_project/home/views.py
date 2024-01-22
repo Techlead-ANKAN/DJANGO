@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from home.models import Contact_model
 # Create your views here.
 
 # 1) return string: syntax --> return HttpResponse("string to display")
@@ -24,5 +25,13 @@ def services(request):
     return HttpResponse("Service page")
 
 def contacts(request):
-    return render(request, "contacts.html")
-    return HttpResponse("Contacts page")
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        phone = request.POST.get('phone')
+        desc = request.POST.get('desc')
+        contact = Contact_model(name = name, email = email, phone = phone, desc = desc)
+        contact.save()
+    else:
+        return render(request, "contacts.html")
+    # return HttpResponse("Contacts page")

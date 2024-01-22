@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
 # In this way you can distinguish the apps that you have created and the apps that were already created
 EXTERNAL_APPS = [
+
     'home',
 ]
 
